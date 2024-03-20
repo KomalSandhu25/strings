@@ -9,6 +9,12 @@ public class Longest_subtring_non_repeating_chars {
         int rmax = 0;
         int prev = 0;
         char[] ch = str.toCharArray();
+        if (str.length() == 0)
+            System.out.println("0");
+
+        // if string length 1
+        if (str.length() == 1)
+            System.out.println("1");
         for(int i =0; i<str.length(); i++){
             if(h.containsKey(ch[i])){
                 rmax = i - prev;
